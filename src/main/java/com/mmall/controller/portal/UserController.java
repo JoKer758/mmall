@@ -19,9 +19,9 @@ public class UserController {
     @Autowired
     private IUserService iUserService;
 
-    @RequestMapping(value="get_information.do", method = RequestMethod.GET)
+    @RequestMapping(value = "get_information.do", method = RequestMethod.GET)
     @ResponseBody
-    public ServerResponse<User> get_information(Integer userId){
+    public ServerResponse<User> get_information(Integer userId) {
         return iUserService.getInformation(userId);
     }
 }
